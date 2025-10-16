@@ -36,7 +36,32 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
-  <script src="assets/js/include.js"></script>
+  <script>
+    // function loadComponent(component, elementId) {
+    //     fetch(component)
+    //         .then(response => response.text())
+    //         .then(data => {
+    //             document.getElementById(elementId).innerHTML = data;
+    //         });
+    // }
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     loadComponent('header.html', 'header');
+    //     loadComponent('footer.html', 'footer');
+    // });
+
+    // const includeHeader = new XMLHttpRequest();
+    // includeHeader.open("GET", "header.html", true);
+    // includeHeader.onreadystatechange = function () {
+    //   if (includeHeader.readyState === 4 && includeHeader.status === 200) {
+    //     const headerHTML = includeHeader.responseText;
+    //     const header = document.querySelector("#header");
+    //     header.insertAdjacentHTML("afterbegin", headerHTML);
+    //   }
+    // };
+    // includeHeader.send();
+</script>
+
 </head>
 
 <body class="index-page">
@@ -46,29 +71,29 @@
 
   <main class="main">
 
-        <!-- Page Title -->
-        <div class="page-title light-background">
-          <div class="container">
-            <nav class="breadcrumbs">
-              <ol>
-                <li><a href="index.html#hero">ホーム</a></li>
-                <li class="current">プライバシーポリシー</li>
-              </ol>
-            </nav>
-            <h1>プライバシーポリシー</h1>
-          </div>
-        </div><!-- End Page Title -->
-    
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html#hero">ホーム</a></li>
+            <li class="current">プライバシーポリシー</li>
+          </ol>
+        </nav>
+        <h1>プライバシーポリシー</h1>
+      </div>
+    </div><!-- End Page Title -->
+
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
 
       <!-- Section Title -->
-      <div class="container section-title">
+      <div class="container section-title" data-aos="fade-up">
         <h2>プライバシーポリシー</h2>
         <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up">
         
         <p>
           <strong>Privacy Policy</strong>
@@ -141,18 +166,30 @@
       </div>
 
     </section>
-
-    
+    <!-- /Starter Section Section -->
   </main>
 
   <footer id="footer" class="footer">
   </footer>
 
+  <!-- <script>
+    const includeHeader = new XMLHttpRequest();
+    includeHeader.open("GET", "header.html", true);
+    includeHeader.onreadystatechange = function () {
+      if (includeHeader.readyState === 4 && includeHeader.status === 200) {
+        const headerHTML = includeHeader.responseText;
+        const header = document.querySelector("#header");
+        header.insertAdjacentHTML("afterbegin", headerHTML);
+      }
+    };
+    includeHeader.send();
+  </script> -->
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  <!-- <div id="preloader"></div> -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
